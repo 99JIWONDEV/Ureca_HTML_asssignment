@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 테스트 -->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지원문고 | 대한민국 최고의 도서 쇼핑몰</title>
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./favicon0.svg" type="image/svg+xml">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+		<!-- Header -->
+  <header class="header">
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">******** 오늘까지만 무료 배송 ********</p>
+      </div>
+    </div>
+    <div class="header-top" data-header>
+      <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="원하는 책을 검색해보세요" class="search-field">
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="지원문고">
+        </a>
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">1</span>
+          </button>
+          <button class="header-action-btn" aria-label="cart item">
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+            <li>
+              <a href="#collection" class="navbar-link has-after">Picks</a>
+            </li>
+            <li>
+              <a href="#shop" class="navbar-link has-after">Best Seller</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+		<!-- Mobile Navbar -->
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+      <ul class="navbar-list">
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Picks</a>
+        </li>
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Best Seller</a>
+        </li>
+      </ul>
+    </div>
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+  <main>
+    <article>
+
+				<!-- Home -->
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-color: #EFF097;" >
+                <div class="card-content">
+                  <p class="hero-text">
+                    북메이트와 함께 읽는 
+                  </p>
+                  <h1 class="h1 hero-title">
+                    이달의 책
+                  </h1>
+                  <p class="price">"지금 필요하고, 신뢰할 수 있으며, 만듦새가 훌륭한" <br /> 세 가지 기준으로 함께 읽고 싶은 책을 골랐습니다</p>
+                  <a href="#" class="btn btn-primary">보러 가기</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+				
+      
+      <!-- Picks -->
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+          <ul class="collection-list">
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">베스트 셀러</h2>
+                <p class="card-text">온라인 일간 베스트 셀러</p>
+                <a href="#" class="btn-link">
+                  <span class="span">보러 가기</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">신간 서적</h2>
+                <p class="card-text">MD가 추천하는 신간 서적</p>
+                <a href="#" class="btn-link">
+                  <span class="span">보러 가기</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+              </div>
+            </li>
+            <li>
+              <div class="collection-card has-before hover:shine">
+                <h2 class="h2 card-title">이벤트</h2>
+                <p class="card-text">현재 진행중인 이벤트</p>
+                <a href="#" class="btn-link">
+                  <span class="span">확인 하기</span>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+				<!-- BestSeller -->
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">베스트 셀러</h2>
+            <a href="#" class="btn-link">
+              <span class="span">전체 상품 보기</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+          <ul class="has-scrollbar">
+
+            <!-- Item1 -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-01.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">소년이 운다</a>
+                  </h3>
+                  <div class="price">
+                    <span class="span">13,500원</span>
+                  </div>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item2 -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">어른의 행복은 조용하다</a>
+                  </h3>
+                  <div class="price">
+                    <span class="span">16.020원</span>
+                  </div>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">4258</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <!-- Item3 -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-03.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">왜 그들만 부자가 되는가</a>
+                  </h3>
+                  <div class="price">
+                    <span class="span">15,120원</span>
+                  </div>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">2504</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item4 -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-04.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                    <span class="badge" aria-label="10% off">-10%</span>
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">퓨처 셀프 30만부 기념 에디션</a>
+                  </h3>
+                  <div class="price">
+                    <del class="del">22,000원</del>
+                    <span class="span">19,800원</span>
+                  </div>
+                  
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      
+                    </div>
+                    <p class="rating-text">2264</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item5 -->
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-05.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">해커스 토익 LC</a>
+                  </h3>
+                  <div class="price">
+                    <span class="span">18,000원</span>
+                  </div>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div style="margin: 150px;"></div>
+
+  <!-- Back to Top  -->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
