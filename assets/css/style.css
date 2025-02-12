@@ -255,7 +255,7 @@ body {
 }
 
 .btn-link {
-  color: var(--black);
+  color: var(--cultured-1);
   font-weight: var(--fw-600);
   display: flex;
   align-items: center;
@@ -618,9 +618,8 @@ body {
   background-color: var(--light-gray);
   padding: 100px 15px;
   background-position: 40%;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: var(--pale-spring-bud);
-  /* background-color:#67AA3F; */
 }
 
 .hero-text {
@@ -659,10 +658,11 @@ body {
   border-radius: 15px;
 }
 
-.collection-card .card-title { margin-block-end: 12px;}
+.collection-card .card-title { margin-block-end: 2px; color: var(--cultured-1);}
 
 .collection-card .card-text {
-  color: var(--black);
+  /* color: var(--black); */
+  color: var(--cultured-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   margin-block-end: auto;
