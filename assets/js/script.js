@@ -130,3 +130,35 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   formContainer.classList.remove("active");
 });
+
+
+const loginForm = document.querySelector("#login-form");
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.querySelector("#login-email").value;
+  const password = document.querySelector("#login-password").value;
+  console.log("Email:", email);
+  console.log("Password:", password);
+
+  formContainer.classList.remove("show");
+  
+  // 서버로 데이터 전송
+  fetch('https://example.com/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email: email, password: password })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+    formContainer.classList.remove("show");
+    overlay.classList.remove("active");
+    alert("로그인 되었습니다.");
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    alert("로그인에 실패했습니다.");
+  });
+});
