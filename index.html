@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <!-- 테스트 -->
   <head>
   <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
 	<!-- 구글 폰트 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,7 @@
 </head>
 
 <body id="top">
+  
 		<!-- Header -->
   <header class="header">
     <div class="alert">
@@ -44,14 +46,14 @@
           <img src="./assets/images/logo.png" width="179" height="26" alt="지원문고">
         </a>
         <div class="header-actions">
-          <button class="header-action-btn" aria-label="user">
+          <button class="header-action-btn" aria-label="user" id="form-open">
             <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
           </button>
           <button class="header-action-btn" aria-label="favourite item">
             <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
             <span class="btn-badge">1</span>
           </button>
-          <button class="header-action-btn" aria-label="cart item">
+          <button class="header-action-btn" aria-label="cart item" >
             <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
             <span class="btn-badge">0</span>
           </button>
@@ -72,6 +74,66 @@
       </div>
     </div>
   </header>
+
+  	<!-- Login Modal -->
+    <div class="form-container">
+      <i class="uil uil-times form-close"></i>
+      <!-- 로그인 -->
+      <div class="form login-form">
+
+        <form action="">
+          <h2>로그인</h2>
+          <div class="input-box">
+            <input type="email" placeholder="이메일을 입력해주세요" required>
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="비밀번호를 입력해주세요" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw-hide"></i>
+          </div>
+          <div class="option-field">
+            <span class="checkbox">
+              <input type="checkbox" id="check">
+              <label for="check">이메일 저장</label>
+            </span>
+            <a href="#" class="forgot-pw">비밀번호를 잊으셨나요?</a>
+          </div>
+          <button class="button">로그인</button>
+          <div class="login-signup">
+            계정이 없으신가요? <a href="#" class="signup" id="signup">회원가입</a>
+          </div>
+        </form>
+      </div>
+      
+      <!-- 회원가입  -->
+      <div class="form signup-form">
+        <form action="">
+          <h2>회원가입</h2>
+          <div class="input-box">
+            <input type="email" placeholder="이메일을 입력해주세요" required>
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="비밀번호를 입력해주세요" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw-hide"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="비밀번호를 확인해주세요" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw-hide"></i>
+          </div>
+          
+          <button class="button">회원가입</button>
+          <div class="login-signup">
+            이미 계정이 있으신가요? <a href="#" class="login" id="login">로그인</a>
+          </div>
+        </form>
+      </div>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
 
 		<!-- Mobile Navbar -->
   <div class="sidebar">
@@ -106,7 +168,7 @@
         <div class="container">
           <ul class="has-scrollbar">
             <li class="scrollbar-item">
-              <div class="hero-card has-bg-image" style="background-color: #EFF097;" >
+              <div class="hero-card has-bg-image" >
                 <div class="card-content">
                   <p class="hero-text">
                     북메이트와 함께 읽는 
