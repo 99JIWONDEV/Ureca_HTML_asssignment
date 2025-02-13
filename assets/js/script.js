@@ -91,12 +91,22 @@ scrollReveal();
 addEventOnElem(window, "scroll", scrollReveal);
 
 
+  /* ---------------------------- */
 const formOpenBtn = document.querySelector("#form-open"),
 formContainer = document.querySelector(".form-container"),
 formCloseBtn = document.querySelector(".form-close"),
 signupBtn = document.querySelector("#signup"),
 loginBtn = document.querySelector("#login"),
+loginBar =  document.querySelector("[data-login]"),
+loginOverlay = document.querySelector("[data-login-overlay]"),
+loginTogglers = document.querySelectorAll("[data-login-toggler]"),
 pwShowHide = document.querySelectorAll(".pw-hide");
+
+const toggleLoginBar = function () {
+  loginOverlay.classList.toggle("active");
+}
+
+addEventOnElem(loginTogglers, "click", toggleLoginBar);
 
 
 formOpenBtn.addEventListener("click", () => {
@@ -138,7 +148,8 @@ loginForm.addEventListener("submit", (e) => {
   const password = document.querySelector("#login-password").value;
   console.log("Email:", email);
   console.log("Password:", password);
-
+  loginBar.classList.remove("active");
+  loginOverlay.classList.remove("active");
   formContainer.classList.remove("show");
   
   // 서버로 데이터 전송
@@ -153,6 +164,7 @@ loginForm.addEventListener("submit", (e) => {
   .then(data => {
     console.log('Success:', data);
     formContainer.classList.remove("show");
+
     alert("로그인 되었습니다.");
   })
   .catch((error) => {

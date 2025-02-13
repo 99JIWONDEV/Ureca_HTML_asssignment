@@ -388,6 +388,23 @@ body {
 /* Login Modal */
 /* ---------------------------- */
 
+.login-overlay {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  pointer-events: none;
+  transition: var(--transition-1);
+}
+
+.login-overlay.active {
+  background-color: var(--black_50);
+  pointer-events: all;
+}
+
 .form-container {
   position: absolute;
   max-width: 380px;
