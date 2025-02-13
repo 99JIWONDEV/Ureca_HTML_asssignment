@@ -388,7 +388,6 @@ body {
 /* Login Modal */
 /* ---------------------------- */
 
-
 .form-container {
   position: absolute;
   max-width: 380px;
@@ -436,6 +435,10 @@ body {
   color: #0b0217;
   opacity: 0.7;
   cursor: pointer;
+}
+
+.form-container input::placeholder{
+  color: var(--spanish-gray);
 }
 
 .form-container h2 {
@@ -530,6 +533,7 @@ body {
   width: 100%;
   padding: 10px 0;
   border-radius: 10px;
+  color: #fff;
 }
 
 .login-signup {
@@ -938,7 +942,7 @@ body {
   .header-top .container { flex-wrap: wrap; }
 
   .search-field {
-    width: 400;
+    width: 250px;
     font-size: var(--fs-7);
     border: 2px solid var(--hoockers-green_20);
     border-radius: var(--radius-3);
@@ -950,7 +954,7 @@ body {
 
   .search-field::placeholder { color: var(--spanish-gray); }
 
-  .search-field:focus { border-color: var(--black); }
+  .search-field:focus { border-color: var( --hoockers-green); }
 
   .header .input-wrapper { position: relative; }
 
@@ -964,7 +968,7 @@ body {
 
   .header .search-submit ion-icon { --ionicon-stroke-width: 40px; }
 
-  .header .logo { margin-inline-end: 60px; }
+  .header .logo { margin-inline-end: 60px; margin-left: -30px; }
 
   .header-actions {
     display: flex;

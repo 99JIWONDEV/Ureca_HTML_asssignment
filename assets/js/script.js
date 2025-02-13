@@ -105,7 +105,6 @@ formOpenBtn.addEventListener("click", () => {
 
 formCloseBtn.addEventListener("click", () => {
   formContainer.classList.remove("show");
-  
 });
 
 pwShowHide.forEach((icon) => {
@@ -154,7 +153,6 @@ loginForm.addEventListener("submit", (e) => {
   .then(data => {
     console.log('Success:', data);
     formContainer.classList.remove("show");
-    overlay.classList.remove("active");
     alert("로그인 되었습니다.");
   })
   .catch((error) => {

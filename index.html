@@ -46,7 +46,7 @@
           <img src="./assets/images/logo.png" width="179" height="26" alt="지원문고">
         </a>
         <div class="header-actions">
-          <button class="header-action-btn" aria-label="user" id="form-open">
+          <button class="header-action-btn" aria-label="user" id="form-open" data-login-toggler>
             <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
           </button>
           <button class="header-action-btn" aria-label="favourite item">
@@ -77,7 +77,7 @@
 
   	<!-- Login Modal -->
     <div class="form-container">
-      <i class="uil uil-times form-close"></i>
+      <i class="uil uil-times form-close" data-login-toggler></i>
       <!-- 로그인 -->
       <div class="form login-form">
 
@@ -131,7 +131,7 @@
           </div>
         </form>
       </div>
-      <div class="overlay" data-nav-toggler data-overlay></div>
+      <div class="login-overlay" data-login-toggler data-login-overlay></div>
     </div>
 
 
@@ -428,7 +428,7 @@
                     <div class="rating-wrapper" aria-label="5 start rating">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                     </div>
-                    <p class="rating-text">5170 reviews</p>
+                    <p class="rating-text">682</p>
                   </div>
                 </div>
               </div>
